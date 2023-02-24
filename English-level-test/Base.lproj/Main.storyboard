@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,13 +15,127 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrl-sr-VlR" userLabel="Card View">
+                                <rect key="frame" x="16" y="147" width="361" height="638"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="PCT-ub-02q" userLabel="Card Stack View">
+                                        <rect key="frame" x="9" y="45" width="343" height="498"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the correct form of the verb &quot;to be&quot; in the past continuous tense: &quot;They ______ dinner when I arrived.&quot;" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJ2-rh-dlY">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="61"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="noh-Bt-D2P" userLabel="Buttons Stack View">
+                                                <rect key="frame" x="0.0" y="118" width="343" height="380"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-WM-6Ds" userLabel="Button1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1671051385" blue="0.18168802780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="2Jb-kb-Xmy"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uae-u8-QqB" userLabel="Button2">
+                                                        <rect key="frame" x="0.0" y="100" width="343" height="80"/>
+                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.18163963280000001" blue="0.20705877410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="DNE-dX-F27"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-sg-3gf" userLabel="Button3">
+                                                        <rect key="frame" x="0.0" y="200" width="343" height="80"/>
+                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1605999649" blue="0.19422960219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="mfa-3S-7Tb"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-JN-Fiu" userLabel="Button4">
+                                                        <rect key="frame" x="0.0" y="300" width="343" height="80"/>
+                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1605999649" blue="0.19422960219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="aeg-hY-lir"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="343" id="Wnc-hc-bDd"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PCT-ub-02q" firstAttribute="leading" secondItem="Vrl-sr-VlR" secondAttribute="leading" constant="9" id="8NT-07-4AL"/>
+                                    <constraint firstItem="PCT-ub-02q" firstAttribute="top" secondItem="Vrl-sr-VlR" secondAttribute="top" constant="45" id="bX3-VY-744"/>
+                                    <constraint firstAttribute="trailing" secondItem="PCT-ub-02q" secondAttribute="trailing" constant="9" id="dHR-qj-JKG"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YNk-Nk-J5C">
+                                <rect key="frame" x="25" y="78" width="342" height="39.333333333333343"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ann-O3-Vl7">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="13e-Gi-BtX">
+                                        <rect key="frame" x="0.0" y="35.333333333333329" width="342" height="4"/>
+                                        <color key="tintColor" red="0.90274637940000002" green="0.2251456976" blue="0.2761122882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.1159491912" green="0.21034225819999999" blue="0.34389501810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YNk-Nk-J5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="5FG-Qg-msO"/>
+                            <constraint firstItem="YNk-Nk-J5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="6Hm-yZ-xZi"/>
+                            <constraint firstItem="Vrl-sr-VlR" firstAttribute="top" secondItem="YNk-Nk-J5C" secondAttribute="bottom" constant="29.670000000000002" id="CY0-RX-5cn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YNk-Nk-J5C" secondAttribute="trailing" constant="26" id="GMO-iJ-RBQ"/>
+                            <constraint firstItem="Vrl-sr-VlR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aE1-Tq-rnY"/>
+                            <constraint firstItem="Vrl-sr-VlR" firstAttribute="top" secondItem="YNk-Nk-J5C" secondAttribute="bottom" constant="29.670000000000002" id="avz-Ps-eAT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vrl-sr-VlR" secondAttribute="bottom" constant="33" id="bfb-cV-bT1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vrl-sr-VlR" secondAttribute="trailing" constant="16" id="ydJ-wN-Iev"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="jhT-WM-6Ds" id="3Zo-aW-zHd"/>
+                        <outlet property="button2" destination="uae-u8-QqB" id="UFL-ZH-bmb"/>
+                        <outlet property="button3" destination="l7n-sg-3gf" id="bAN-yr-E2x"/>
+                        <outlet property="button4" destination="y2E-JN-Fiu" id="ymI-k9-OVu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="4"/>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
