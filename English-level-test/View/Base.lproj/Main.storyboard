@@ -33,43 +33,51 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-WM-6Ds" userLabel="Button1">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
-                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1671051385" blue="0.18168802780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="2Jb-kb-Xmy"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFS-je-b1w"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uae-u8-QqB" userLabel="Button2">
                                                         <rect key="frame" x="0.0" y="100" width="343" height="80"/>
-                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.18163963280000001" blue="0.20705877410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="DNE-dX-F27"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="usx-oc-Zj7"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7n-sg-3gf" userLabel="Button3">
                                                         <rect key="frame" x="0.0" y="200" width="343" height="80"/>
-                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1605999649" blue="0.19422960219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="mfa-3S-7Tb"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MoA-DY-i0M"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2E-JN-Fiu" userLabel="Button4">
                                                         <rect key="frame" x="0.0" y="300" width="343" height="80"/>
-                                                        <color key="backgroundColor" red="0.52976894379999995" green="0.1605999649" blue="0.19422960219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="aeg-hY-lir"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3FF-Ll-8yk"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -120,6 +128,8 @@
                         <outlet property="button2" destination="uae-u8-QqB" id="UFL-ZH-bmb"/>
                         <outlet property="button3" destination="l7n-sg-3gf" id="bAN-yr-E2x"/>
                         <outlet property="button4" destination="y2E-JN-Fiu" id="ymI-k9-OVu"/>
+                        <outlet property="questionLabel" destination="qJ2-rh-dlY" id="XSv-Ji-osq"/>
+                        <outlet property="questionNumberLabel" destination="ann-O3-Vl7" id="lvp-Fq-WvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
