@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuizViewController: UIViewController {
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -30,10 +30,17 @@ class ViewController: UIViewController {
     @IBAction func answerButtonPressed(_ sender: UIButton){
         let userAnswer = sender.currentTitle!
         let correctAnswer = quizBrain.checkAnswer(userAnswer)
+       
         if correctAnswer {
             print("Correct answer")
-        } else {
+            quizBrain.points += 1
+        }
+        if quizBrain.questionNumber == quizBrain.quiz.count-1 {
+            self.performSegue(withIdentifier: "goToResult", sender: self)
+        }
+        else {
             print("Incorrect answer")
+            print(quizBrain.points)
         }
         quizBrain.nextQuestion()
         
@@ -47,8 +54,12 @@ class ViewController: UIViewController {
         button2.setTitle(quizBrain.getSecondAnswerText(), for: .normal)
         button3.setTitle(quizBrain.getThirdAnswerText(), for: .normal)
         button4.setTitle(quizBrain.getFourthAnswerText(), for: .normal)
-
-    
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult"{
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.finalScore = String(quizBrain.points)
+        }
     }
 }
 

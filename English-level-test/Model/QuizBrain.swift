@@ -108,6 +108,7 @@ struct QuizBrain{
     ]
     
     var questionNumber: Int = 0
+    var points: Int = 0
     
     func checkAnswer(_ userAnswer: String) -> Bool {
         userAnswer == quiz[questionNumber].correctAnswer ? true : false
